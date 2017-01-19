@@ -1,12 +1,232 @@
 <!DOCTYPE html>
+<html lang="en-us">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Test</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Personal Portfolio of Andrew Preston Photographer.">
+	<meta name="author" content="Maria Vazquez">
+	
+	<title>Andrew Preston Photographer</title>
+	
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather" rel="stylesheet">
+	
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- external JS link -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
-	<h1>Hi world</h1>
-	<div id="nice" class="pizza">
-	<p>Nice words.</p>	
+
+	<!-- HEADER -->
+	<header id="page-header">
+		<div class="wrapper">
+			<h1><a href="index.html">Andrew Preston</a></h1>
+			<div class= "hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a id="about" href="#codeabout">About</a></li>
+					<li><a id="work" href="#codework">Work</a></li>			
+					<li><a href="https://www.instagram.com/andypres10/" target="_blank">Journal</a></li>		
+					<li><a id="contact" href="#codefooter">Contact</a></li>			
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- BANNER -->
+	<section class="banner">
+		<div class="wrapper">
+			<div class="blurb">
+				<h2>Where does your mind want to travel?</h2>
+				
+				<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Select a destination</button>
+				<div id="myDropdown" class="dropdown-content">
+    			<a href="#" target="_blank">Argentina</a>
+			    <a href="#" target="_blank">India</a>
+			    <a href="#" target="_blank">Nepal</a>
+			    <a href="#" target="_blank">Egypt</a>
+  			</div>
+
+		</div>
+	</section>
+
+	<!-- WORK -->
+	<a name="codework"></a>
+	<p class="section-title">Work</p>
+	
+	<div class="wrapper-three">
+	<div class="work">
+
+	<div class="row">
+  		<div class="column">
+    		<img src="images/people.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    		<img src="images/events.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    		<img src="images/outdoor.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    		<img src="images/asia.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  		</div>
+   		<div class="column">
+    		<img src="images/north.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  		</div>
+     	<div class="column">
+    		<img src="images/south.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  		</div>
 	</div>
-	<script src="js/main.js"></script>
+
+	<div id="myModal" class="modal">
+  		<span class="close cursor" onclick="closeModal()">&times;</span>
+  		<div class="modal-content">
+
+    <div class="mySlides">
+      	<div class="numbertext">1 / 6</div>
+      	<img src="images/people1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      	<div class="numbertext">2 / 6</div>
+      	<img src="images/events1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      	<div class="numbertext">3 / 6</div>
+      	<img src="images/outdoor3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      	<div class="numbertext">4 / 6</div>
+      	<img src="images/asia1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      	<div class="numbertext">5 / 6</div>
+     	<img src="images/north1.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      	<div class="numbertext">6 / 6</div>
+      	<img src="images/south1.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+	    <div class="column">
+	      <img class="demo cursor" src="images/people1.jpg" style="width:100%" onclick="currentSlide(1)" alt="People">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="images/events1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Events">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="images/outdoor3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Outdoors">
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="images/asia1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Asia">
+	    </div>
+	     <div class="column">
+	    <img class="demo cursor" src="images/north1.jpg" style="width:100%" onclick="currentSlide(5)" alt="North America">
+	    </div>
+	    <div class="column">
+	    <img class="demo cursor" src="images/south1.jpg" style="width:100%" onclick="currentSlide(6)" alt="South America">
+	    </div>
+	  </div>
+	</div>
+
+	</div>
+	</div>
+
+	<!-- ABOUT -->
+	<a name="codeabout"></a>
+	<p class="section-title">About</p>
+
+	<div class="wrapper-two">
+	<div class="wrapper">
+		<section class="aboutme">
+			<section class="text">
+				<header>
+				<h3>Andrew Preston</h3>
+				</header>
+				<br><p class="about-text">is a lifestyle photographer with a focus on travel and portraits. Born in Chesapeake, Virginia. He always enjoy the outdoor life. Once he travelled around the world for one year and discovered his biggest passion &quot;Photography&quot;<br><br>He currently lives and works in Denver, Colorado.</p><br>
+				<ul>
+    			<li><a href = "https://www.instagram.com/andypres10/" target="_blank">Instagram</a></li>
+    			<li><a href = "https://twitter.com/itsoundsmadeup" target="_blank">Twitter</a></li>
+				</ul>
+			</section>
+
+			<section class="photo">
+				<img src="images/andrew.jpg" alt="andrew" class="alignright" style="width: 350px; height: 350px;">
+			</section>
+		</section>
+	</div>
+	</div>
+
+	<!-- CONTACT -->
+
+	<div class="wrapper-three">
+		<div class="contact-me">
+			<section class="contact-text">
+				<header>
+				<h3>Get in touch</h3>
+				</header><br>
+				<p>For more information please fill out form.</p><br>
+				<button><a href="mailto:hello@andrewpreston.com?Subject=Hello%20again" target="_top">hello@andrewpreston.com</a></button><br>
+				<ul>
+					<li><a href="https://twitter.com/itsoundsmadeup"><img src="images/social media-01.png" alt="Twitter logo" height="40" width="40"></a></li>
+					<li><a href="https://www.instagram.com/andypres10/"><img src="images/social media-03.png" alt="Instagram logo" height="40" width="40"></a></li>
+					<li><a href="https://twitter.com/itsoundsmadeup"><img src="images/social media-02.png" alt="Flickr logo" height="40" width="40"></a></li>
+				</ul>
+			</section>
+
+		<section class="contact-area">
+
+				<form method="post" action="https://formspree.io/jimenavaz@gmail.com">
+					<label for="name">Name</label><br>
+					<input type="text" name="name" placeholder="Your name" id="name" />
+					<br>
+					<label for="email">Email</label><br>
+					<input type="text" name="email" placeholder="Your email" id="email" />
+					<br>
+					<label for="message">Message</label><br>
+					<textarea name="message" placeholder="Your message" id="message"></textarea>
+					<input type="submit" name="submit" value="Send" class="submit-button" />
+				</form>
+		</section>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<!-- FOOTER -->
+	
+	<a name="codefooter"></a>
+
+	<footer>
+		<div class="wrapper">
+			<h4>© 2017 - Andrew Preston | Powered by <a href = "https://www.souvenirme.com" target="_blank">Souvenirme Design Studio.</a></h4>
+		</div>
+	</footer>
+
+
+	<a href="#0" class="cd-top">Top</a>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
+</html>
