@@ -1,5 +1,8 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+$(document).ready(function(){
+
+	$(".dropbtn").click(myFunction);
+
+/* When the user clicks on the button,toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -19,7 +22,22 @@ window.onclick = function(event) {
   }
 }
 
-//WORK SLIDESHOW
+	$("#banner a").click(function() {
+  //get the ID of the dropdown option
+  		var countryID = $(this).attr("id");
+  		console.log(countryID); //-> india
+  //use that ID to set the class
+  	$("#banner").attr("class", countryID);
+  	console.log($("#banner").attr("class"));
+});
+
+//WORK SLIDESHOW----------------------------------------------------------
+
+$(".column img").click(function(){
+	openModal();
+	var num = $(this).data("pic");
+	currentSlide(num);
+});
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -28,6 +46,13 @@ function openModal() {
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
+
+$(".modal .close").on("click", function(){
+	console.log("word");
+	$(this).parent().fadeOut();
+});
+
+$(".next").click(plusSlides(2));
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -58,9 +83,13 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-$(document).ready(function(){
+//MEDIA MENU----------------------------------------------------------------------
 
-//BACK TO TOP ARROW
+	//$('header nav ul li:first-child').click(function(){
+    //	$(this).parent().toggleClass('slideDown');
+  	//}
+
+//BACK TO TOP ARROW----------------------------------------------------------
 	
 	// browser window scroll (in pixels) after which the "back to top" link is shown
 	var offset = 00,
@@ -107,9 +136,7 @@ $top_to_down.on('click', function(event){
 		$('html,body').animate({ scrollTop: 5000 }, 'slow');
 	});
 
-});
-
-//GO DOWN SLOW
+//GO DOWN SLOW----------------------------------------------------------
 
 	function scrollToAnchor(aid){
 	    var aTag = $("a[name='"+ aid +"']");
@@ -127,3 +154,5 @@ $top_to_down.on('click', function(event){
 	$("#contact").click(function() {
 	   scrollToAnchor('codefooter');
 	});
+
+});
