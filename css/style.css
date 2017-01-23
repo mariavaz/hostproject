@@ -258,132 +258,44 @@ a:hover {
 05=WORK
 -----------------------------------------------------------------------------*/
 .work{
-	margin-left: 100px;
+	margin-left: 90px;
 	padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-.row > .column {
-  padding: 0 8px;
+.thumbnail {
+  max-width: 30%;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/** LIGHTBOX MARKUP **/
 
-.column {
-  float: left;
-  width: 30%;
-  margin-bottom: 10px;
-}
-
-/* The Modal (background) */
-.modal {
+.lightbox {
+  /** Default lightbox to hidden */
   display: none;
+
+  /** Position and style */
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
+  z-index: 999;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: rgba(0,0,0,0.9);
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
   top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
 }
 
-.caption-container {
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  background-color: rgba(0,0,0,0.9);
-  padding: 20px 16px;
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
 }
 
-#caption {
-	color:white;
-}
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
 
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+  /** Unhide lightbox **/
+  display: block;
 }
 
 img.hover-shadow {
@@ -734,11 +646,11 @@ MEDIA SCREEN
   }
 
   .work{
-    margin: 0 auto;
+    margin-left: 50px;
   }
 
-  .column{
-    width: 100%;
+  .thumbnail{
+    max-width: 100px;
   }
 
 	.contact-area{
