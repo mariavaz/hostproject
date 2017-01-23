@@ -146,26 +146,6 @@ a:hover {
 	background: #666;
 }
 
-/* START boilerplate css for hamburger --------------------*/
-
-header nav .line{
-  width: 3em;
-  height: .3em;
-  background: black;
-  border-radius: 1em;
-  margin-top: .25em;
-}
-header nav .line:first-of-type{
-  margin-top:.7em;
-}
-header nav li:first-child{
-  float:right;
-  display: none;
-  cursor: pointer;
-}
-
-/* END boilerplate css for hamburger ----------------------*/
-
 /*----------------------------------------------------------------------------- 
 04=BANNER  
 -----------------------------------------------------------------------------*/
@@ -180,32 +160,32 @@ header nav li:first-child{
 
 /* Background changes */
 
-.argentina {
-  background: url(../images/argen.jpg) center center no-repeat;
+.egypt {
+  background: url(../images/egyp.jpg) center center no-repeat;
   background-size: cover;
-	height: 700px;
-	overflow: hidden;
-	padding: 3%;
+  height: 700px;
+  overflow: hidden;
+  padding: 3%;
 }
 
 .india {
   background: url(../images/indi.jpg) center center no-repeat;
   background-size: cover;
-	height: 700px;
-	overflow: hidden;
-	padding: 3%;
+  height: 700px;
+  overflow: hidden;
+  padding: 3%;
 }
 
 .nepal {
   background: url(../images/nep.jpg) center center no-repeat;
   background-size: cover;
-	height: 700px;
-	overflow: hidden;
-	padding: 3%;
+  height: 700px;
+  overflow: hidden;
+  padding: 3%;
 }
 
-.egypt {
-  background: url(../images/egyp.jpg) center center no-repeat;
+.uruguay {
+  background: url(../images/uruguay.jpg) center center no-repeat;
   background-size: cover;
 	height: 700px;
 	overflow: hidden;
@@ -245,6 +225,7 @@ header nav li:first-child{
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
+    z-index: 1;
     display: inline-block;
 }
 
@@ -449,7 +430,7 @@ img.hover-shadow {
 }
 
 .text ul li a:hover {
-	color: black;
+	color: white;
 }
 
 
@@ -614,12 +595,60 @@ RETURN TO TOP
 MEDIA SCREEN  
 -----------------------------------------------------------------------------*/
 
+/* START boilerplate css for hamburger --------------------*/
+
+.hamburger{
+  position: absolute;
+  top: 0.3em;
+  right: 0.5em;
+}
+.hamburger .line{
+  width: 3em;
+  height: 0.3em;
+  background: #779cab;
+  border-radius: 1em;
+  margin-top: 0.25em;
+}
+.hamburger .line:first-of-type{
+  margin-top: 0.7em;
+}
+
+/* END boilerplate css for hamburger ----------------------*/
+
+@media screen and (max-width: 768px){
+  .hamburger{
+    display: block;
+  }
+  #page-header{
+    height: 100%;
+  }
+  #page-header nav {
+    display: none;
+  }
+  #page-header nav a {
+    display: inline;
+    height: 500px;
+  }
+  #page-header nav ul li{
+    width: 100%;
+    background-color: #779cab;
+  }
+}
+
+/* --------------------------------------------------------- */
+
 @media only screen and (min-width: 768px) {
   .cd-top {
     right: 20px;
     bottom: 20px;
   }
+  .hamburger{
+    display: none;
+  }
 }
+
+/* --------------------------------------------------------- */
+
 @media only screen and (min-width: 1024px) {
   .cd-top {
     height: 60px;
@@ -631,93 +660,88 @@ MEDIA SCREEN
 
 /* --------------------------------------------------------- */
 
-
-@media screen and (max-width: 768px){
-  header nav {
-    width: 100%;
-    margin: 0;
-  }
-  header nav ul li{
-    float: none;
-    display: block;
-    margin: 0;
-    font-size: 18px;
-  }
-  header nav ul li:first-child{
-    display:block;
-    position: absolute;
-    top:.6em;
-    right:.75em;
-  }
-  header nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-  }
-  header nav ul{
-    height:0;
-    transition:height 1s;
-    overflow: hidden;
-  }
-  header nav ul.slideDown {
-    height: 10em;
-  }
-
-/* --------------------------------------------------------- */
-
 @media screen and (max-width: 480px){
-	header nav {
-    width: 100%;
-    margin: 0;
-  }
-  header nav ul li{
-    float: none;
+
+  .hamburger{
     display: block;
-    margin: 0;
-    font-size: 18px;
-  }
-  header nav ul li:first-child{
-    display:block;
-    position: absolute;
-    top:.6em;
-    right:.75em;
-  }
-  header nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-  }
-  header nav ul{
-    height:0;
-    transition:height 1s;
-    overflow: hidden;
-  }
-  header nav ul.slideDown {
-    height: 10em;
   }
 
   #page-header {
-		padding: 0 3%;
-		height: 80px;
+		height: 100%;
 	}
+  #page-header nav {
+    display: none;
+  }
+
+  #page-header nav a{
+    display: inline;
+  }
+
+  #page-header nav ul li{
+    width: 100%;
+    background-color: #779cab;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #page-header nav ul li:hover{
+    background-color: black;
+  }
+
 	#page-header h1{
 		font-size: 1.5em;
+    margin-bottom: 10px;
 	}
 	.banner{
 		background-size: 100%;
 		padding: 0%;
-		height: 300px;
+		height: 250px;
 	}
+
+  .egypt{
+    background-size: 100%;
+    padding: 0%;
+    height: 250px;
+  }
+  .india{
+    background-size: 100%;
+    padding: 0%;
+    height: 250px;
+  }
+  .nepal{
+    background-size: 100%;
+    padding: 0%;
+    height: 250px;
+  }
+  .uruguay{
+    background-size: 100%;
+    padding: 0%;
+    height: 250px;
+  }
 	.blurb{
-		display: none;
+		font-size: 1em;
+    width: 100%;
+    margin-top: 10px;
 	}
-	.dropdown{
-		display: none;
+	.dropbtn{
+		width: 100%;
+    font-size: 1em;
 	}
+
+  .dropdown-content {
+    min-width: 200px;
+  }
+
+  .work{
+    margin: 0 auto;
+  }
+
+  .column{
+    width: 100%;
+  }
+
 	.contact-area{
 		float: left;
 		width: 100%;
@@ -741,6 +765,4 @@ MEDIA SCREEN
 	}
 	.section-title {
 		font-size: 14px;
-		color: white;
-		padding: 6px;
 }
