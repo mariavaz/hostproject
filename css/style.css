@@ -508,9 +508,8 @@ input[type=submit]:hover {
 .contact-text ul li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 5px;
-	border: 2px solid #779cab;
-  	margin-right: 8px;
+  background-color: red;
+  line-height: normal;
 }
 
 .contact-text ul li:hover {
@@ -746,13 +745,15 @@ MEDIA SCREEN
 		float: left;
 		width: 100%;
 	}
-	footer{
-		height: 100px;
-	}
+
+  .contact-text{
+    width: 100%;
+  }
 	.contact-text ul li {
-		width: 28%;
+		width: 15%;
 		margin-right: 5px;
 	}
+
 	h3{
 		font-size: 25px;
 	}
@@ -765,4 +766,8 @@ MEDIA SCREEN
 	}
 	.section-title {
 		font-size: 14px;
+  }
+  footer{
+    height: 100px;
+  }
 }
