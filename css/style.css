@@ -609,6 +609,10 @@ MEDIA SCREEN
 		font-size: 1.5em;
     margin-bottom: 10px;
 	}
+  h2{
+    line-height: 50%;
+  }
+
 	.banner{
 		background-size: 180%;
 		padding: 0%;
@@ -616,22 +620,22 @@ MEDIA SCREEN
 	}
 
   .egypt{
-    background-size: 150%;
+    background-size: 180%;
     padding: 0%;
     height: 380px;
   }
   .india{
-    background-size: 150%;
+    background-size: 180%;
     padding: 0%;
     height: 380px;
   }
   .nepal{
-    background-size: 150%;
+    background-size: 180%;
     padding: 0%;
     height: 380px;
   }
   .uruguay{
-    background-size: 150%;
+    background-size: 180%;
     padding: 0%;
     height: 380px;
   }
