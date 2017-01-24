@@ -414,6 +414,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #779cab;
     color: white;
+    -webkit-border-radius: 0;
 }
 
 .contact-text ul{
@@ -614,24 +615,24 @@ MEDIA SCREEN
 	}
 
   .egypt{
-    background-size: 100%;
+    background-size: 150%;
     padding: 0%;
-    height: 250px;
+    height: 380px;
   }
   .india{
-    background-size: 100%;
+    background-size: 150%;
     padding: 0%;
-    height: 250px;
+    height: 380px;
   }
   .nepal{
-    background-size: 100%;
+    background-size: 150%;
     padding: 0%;
-    height: 250px;
+    height: 380px;
   }
   .uruguay{
-    background-size: 100%;
+    background-size: 150%;
     padding: 0%;
-    height: 250px;
+    height: 380px;
   }
 	.blurb{
 		font-size: 1em;
@@ -672,7 +673,6 @@ MEDIA SCREEN
 	}
 	.photo {
 		width: 100%;
-		margin-right: 20px;
 	}
 	.text{
 		width: 100%;
