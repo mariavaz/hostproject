@@ -409,6 +409,7 @@ input[type=submit] {
     margin-right: 15%;
     float: right;
     -webkit-border-radius: 0;
+    -webkit-appearance: none;
 }
 
 input[type=submit]:hover {
