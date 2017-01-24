@@ -225,7 +225,6 @@ a:hover {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    z-index: 1;
     display: inline-block;
 }
 
@@ -258,7 +257,7 @@ a:hover {
 05=WORK
 -----------------------------------------------------------------------------*/
 .work{
-	margin-left: 90px;
+	text-align: center;
 	padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -348,8 +347,9 @@ img.hover-shadow {
 
 .photo {
 	float: right;
-	width: 40%;
+	width: 35%;
 	padding: 2% 3%;
+  margin-left: 20px;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -382,6 +382,7 @@ input[type=text], select {
     border: 2px solid #779cab;
     box-sizing: border-box;
     font-size: 16px;
+    -webkit-border-radius: 0;
 }
 
 textarea{
@@ -392,6 +393,7 @@ textarea{
     border: 2px solid #779cab;
     box-sizing: border-box;
     font-size: 16px;
+    -webkit-border-radius: 0;
 }
 
 input[type=submit] {
@@ -406,6 +408,7 @@ input[type=submit] {
     text-transform: uppercase;
     margin-right: 15%;
     float: right;
+    -webkit-border-radius: 0;
 }
 
 input[type=submit]:hover {
@@ -420,7 +423,6 @@ input[type=submit]:hover {
 .contact-text ul li {
 	list-style-type: none;
 	display: inline-block;
-  background-color: red;
   line-height: normal;
 }
 
@@ -606,9 +608,9 @@ MEDIA SCREEN
     margin-bottom: 10px;
 	}
 	.banner{
-		background-size: 100%;
+		background-size: 150%;
 		padding: 0%;
-		height: 250px;
+		height: 380px;
 	}
 
   .egypt{
@@ -645,12 +647,11 @@ MEDIA SCREEN
     min-width: 200px;
   }
 
-  .work{
-    margin-left: 50px;
-  }
-
   .thumbnail{
     max-width: 100px;
+  }
+  .lightbox img {
+  margin-top: 50%;
   }
 
 	.contact-area{
