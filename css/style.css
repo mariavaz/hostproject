@@ -259,12 +259,12 @@ a:hover {
 .work{
 	text-align: center;
 	padding-top: 20px;
-  padding-bottom: 15px;
+  	padding-bottom: 15px;
 }
 
 .thumbnail {
-  max-width: 30%;
-}
+  	max-width: 30%;
+}	
 
 /** LIGHTBOX MARKUP **/
 
@@ -572,26 +572,57 @@ MEDIA SCREEN
     bottom: 30px;
   }
 }
+/* --------------------------------------------------------- */
+
+@media only screen and (max-width: 768px){
+	.hamburger{
+		display: block;
+	}
+	#page-header{
+		height: 100%;
+	}
+	#page-header nav{
+		display: none;
+	}
+	#page-header nav a{
+		display: inline;
+	}
+	#page-header nav ul li{
+		width: 170%;
+		background-color: #779cab;
+		color:white;
+		border-bottom: 1px solid white;
+		text-align: center;
+		padding: 10px;
+		position: relative;
+		right: 290px;
+	}
+	#page-header nav ul li:hover{
+		background-color: black;
+	}
+	#page-header h1{
+		margin-bottom: 20px;
+	}
+	.text{
+		width: 50%;
+	}
+}
 
 /* --------------------------------------------------------- */
 
 @media screen and (max-width: 480px){
-
   .hamburger{
     display: block;
   }
-
   #page-header {
-		height: 100%;
+	height: 100%;
 	}
   #page-header nav {
     display: none;
   }
-
   #page-header nav a{
     display: inline;
   }
-
   #page-header nav ul li{
     width: 100%;
     background-color: #779cab;
@@ -600,25 +631,20 @@ MEDIA SCREEN
     text-align: center;
     padding: 10px;
   }
-
   #page-header nav ul li:hover{
     background-color: black;
   }
-
-	#page-header h1{
-		font-size: 1.5em;
+  #page-header h1{
+	font-size: 1.5em;
     margin-bottom: 10px;
-	}
+  }
   h2{
     line-height: 90%;
   }
-
-	.banner{
-		background-size: 180%;
-		padding: 0%;
-		height: 380px;
-	}
-
+  .banner{
+  	background-size:180%;
+  	padding: 0;
+  }
   .egypt{
     background-size: 180%;
     padding: 0%;
@@ -639,51 +665,46 @@ MEDIA SCREEN
     padding: 0%;
     height: 380px;
   }
-	.blurb{
-		font-size: 1em;
+  .blurb{
+	font-size: 1em;
     width: 100%;
     margin-top: 10px;
-	}
-	.dropbtn{
-		width: 100%;
+  }
+  .dropbtn{
+	width: 100%;
     font-size: 1em;
-	}
-
+  }
   .dropdown-content {
     min-width: 200px;
   }
-
   .thumbnail{
     max-width: 100px;
   }
   .lightbox img {
-  margin-top: 50%;
+  	margin-top: 50%;
   }
-
-	.contact-area{
-		float: left;
-		width: 100%;
-	}
-
+  .contact-area{
+  	float: left;
+  	width: 100%;
+  }
   .contact-text{
     width: 100%;
   }
-	.contact-text ul li {
-		width: 15%;
-		margin-right: 5px;
-	}
-
-	h3{
-		font-size: 25px;
-	}
-	.photo {
-		width: 100%;
-	}
-	.text{
-		width: 100%;
-	}
-	.section-title {
-		font-size: 14px;
+  .contact-text ul li {
+	width: 15%;
+	margin-right: 5px;
+  }
+  h3{
+	font-size: 25px;
+  }
+  .photo {
+	width: 100%;
+  }
+  .text{
+	width: 100%;
+  }
+  .section-title {
+	font-size: 14px;
   }
   footer{
     height: 100px;
