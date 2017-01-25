@@ -577,6 +577,9 @@ MEDIA SCREEN
   #page-header h1{
     margin-bottom: 20px;
   }
+  .lightbox img {
+    margin-top: 30%;
+  }
   .text{
     width: 50%;
   }
@@ -619,14 +622,15 @@ MEDIA SCREEN
   }
   #page-header h1{
 	 font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   h2{
-    line-height: 90%;
+    line-height: 120%;
   }
   .banner{
   	background-size:180%;
   	padding: 0;
+    height: 380px;
   }
   .egypt{
     background-size: 180%;
