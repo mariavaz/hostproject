@@ -549,13 +549,21 @@ MEDIA SCREEN
   }
   #page-header{
     height: 100%;
+    width: 100%;
+    padding: 0;
   }
   #page-header nav {
     display: none;
+    width: 100%;
+    padding: 0;
   }
   #page-header nav a {
     display: inline;
     height: 500px;
+  }
+  #page-header nav ul{
+    margin-left: -15%;
+    margin-right: -15%;
   }
   #page-header nav ul li{
     width: 100%;
@@ -569,13 +577,15 @@ MEDIA SCREEN
     text-align: center;
     padding: 10px;
     position: relative;
-    right: 290px;
+    /*right: 290px;*/
   }
   #page-header nav ul li:hover{
     background-color: black;
   }
   #page-header h1{
+    padding: 10px 20px 5px 20px;
     margin-bottom: 20px;
+    margin-left: 3%;
   }
   .lightbox img {
     margin-top: 30%;
