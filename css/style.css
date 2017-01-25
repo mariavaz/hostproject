@@ -570,7 +570,6 @@ MEDIA SCREEN
     background-color: #779cab;
   }
   #page-header nav ul li{
-    width: 170%;
     background-color: #779cab;
     color:white;
     border-bottom: 1px solid white;
@@ -612,9 +611,14 @@ MEDIA SCREEN
   }
   #page-header {
 	 height: 100%;
+   padding: 0;
 	}
   #page-header nav {
     display: none;
+  }
+  #page-header nav ul{
+    margin-left: -15%;
+    margin-right: -15%;
   }
   #page-header nav a{
     display: inline;
@@ -632,7 +636,9 @@ MEDIA SCREEN
   }
   #page-header h1{
 	 font-size: 1.5em;
-    margin-bottom: 20px;
+   padding: 10px 20px 5px 20px;
+   margin-bottom: 20px;
+   margin-left: 3%;
   }
   h2{
     line-height: 120%;
