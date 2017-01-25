@@ -530,6 +530,16 @@ MEDIA SCREEN
 
 /* END boilerplate css for hamburger ----------------------*/
 
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/* --------------------------------------------------------- */
+
 @media screen and (max-width: 768px){
   .hamburger{
     display: block;
@@ -548,6 +558,25 @@ MEDIA SCREEN
     width: 100%;
     background-color: #779cab;
   }
+  #page-header nav ul li{
+    width: 170%;
+    background-color: #779cab;
+    color:white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    right: 290px;
+  }
+  #page-header nav ul li:hover{
+    background-color: black;
+  }
+  #page-header h1{
+    margin-bottom: 20px;
+  }
+  .text{
+    width: 50%;
+  }
 }
 
 /* --------------------------------------------------------- */
@@ -560,52 +589,6 @@ MEDIA SCREEN
   .hamburger{
     display: none;
   }
-}
-
-/* --------------------------------------------------------- */
-
-@media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
-  }
-}
-/* --------------------------------------------------------- */
-
-@media only screen and (max-width: 768px){
-	.hamburger{
-		display: block;
-	}
-	#page-header{
-		height: 100%;
-	}
-	#page-header nav{
-		display: none;
-	}
-	#page-header nav a{
-		display: inline;
-	}
-	#page-header nav ul li{
-		width: 170%;
-		background-color: #779cab;
-		color:white;
-		border-bottom: 1px solid white;
-		text-align: center;
-		padding: 10px;
-		position: relative;
-		right: 290px;
-	}
-	#page-header nav ul li:hover{
-		background-color: black;
-	}
-	#page-header h1{
-		margin-bottom: 20px;
-	}
-	.text{
-		width: 50%;
-	}
 }
 
 /* --------------------------------------------------------- */
@@ -671,7 +654,7 @@ MEDIA SCREEN
     margin-top: 10px;
   }
   .dropbtn{
-	width: 100%;
+	  width: 100%;
     font-size: 1em;
   }
   .dropdown-content {
@@ -691,20 +674,20 @@ MEDIA SCREEN
     width: 100%;
   }
   .contact-text ul li {
-	width: 15%;
-	margin-right: 5px;
+	 width: 15%;
+	 margin-right: 5px;
   }
   h3{
-	font-size: 25px;
+	 font-size: 25px;
   }
   .photo {
-	width: 100%;
+	 width: 100%;
   }
   .text{
-	width: 100%;
+	 width: 100%;
   }
   .section-title {
-	font-size: 14px;
+	 font-size: 14px;
   }
   footer{
     height: 100px;
